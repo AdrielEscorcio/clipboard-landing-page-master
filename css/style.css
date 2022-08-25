@@ -1,0 +1,211 @@
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+@font-face {
+    font-family: "Bai Jamjuree";
+    src: url(../font/BaiJamjuree-Regular.ttf);
+}
+
+* {
+     margin: 0;
+     padding: 0;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: "Bai Jamjuree";
+    font-size: 18px;
+    color: var(--Grayish-Blue);
+}
+
+h1, h2, h3 {
+    color: var(--Dark-Grayish-Blue);
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+header {
+    display: grid;
+    justify-items: center;
+    gap: 40px;
+    margin-top: 50px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.text p {
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.botoes a {
+    padding: 16px 32px;
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    
+}
+
+.ios {
+    background-color: var(--Strong-Cyan);
+    box-shadow: 0px 8px 6px 0px rgba(30,148,130,1);
+}
+
+.mac {
+    background-color: var(--Light-Blue);
+    box-shadow: 0px 8px 6px 0px rgba(77,97,255,1);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 150px;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.header p {
+    margin-top: 20px;
+    padding: 0 250px;
+}
+
+.info-pc {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.pc {
+    width: 50%;
+    position: relative;
+    left: -250px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+}
+
+.info div {
+    text-align: left;
+    margin-top: 80px;
+}
+
+.info p {
+    margin-top: 10px;
+}
+
+.devices div:last-child {
+    margin-top: 60px;   
+}
+
+.devices div:last-child img {
+    max-width: 100%;
+}
+
+.tools {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    
+}
+
+.tools div {
+    width: 33%;
+}
+
+.tools h3 {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.parceiros {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.clipboard {
+    display: grid;
+    gap: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    padding: 50px;
+    margin-top: 150px;
+    gap: 80px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 20px;
+    width: 800px;
+    text-align: left;
+}
+
+.links span {
+    width: 150px;
+    margin-right: 40px;
+}
+.links a {
+    text-decoration: none;
+    padding-right: 32px;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.redes {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.redes img {
+    width: 20px;
+}
+.oculto {
+    display: none;
+}
