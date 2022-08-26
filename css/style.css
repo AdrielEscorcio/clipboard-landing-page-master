@@ -4,6 +4,8 @@
 
     --Dark-Grayish-Blue: hsl(210, 10%, 33%);
     --Grayish-Blue: hsl(201, 11%, 66%);
+
+    --bege: hsl(209, 20%, 96%);
 }
 
 @font-face {
@@ -70,7 +72,6 @@ header {
     text-decoration: none;
     color: white;
     border-radius: 30px;
-    
 }
 
 .ios {
@@ -165,13 +166,21 @@ main {
 }
 
 footer {
+    background-color: var(--bege);
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer > div {
     display: flex;
     justify-content: space-around;
     align-items: center;
     max-width: 1200px;
     padding: 50px;
-    margin-top: 150px;
     gap: 80px;
+    
 }
 
 .logo img {
@@ -183,7 +192,7 @@ footer {
     flex-wrap: wrap;
     column-gap: 40px;
     row-gap: 20px;
-    width: 800px;
+    width: calc(100% - 550px);
     text-align: left;
 }
 
@@ -197,15 +206,89 @@ footer {
     color: var(--Dark-Grayish-Blue);
 }
 
+.links a:hover {
+    color: var(--Strong-Cyan);
+}
+
 .redes {
     display: flex;
-    gap: 10px;
-    
+    flex-direction: row;
+    gap: 20px;
 }
 
 .redes img {
     width: 20px;
 }
-.oculto {
-    display: none;
-}
+
+.redes svg:hover path {
+    fill: var(--Strong-Cyan);
+  }
+
+
+  @media (max-width:1000px) {
+    body {
+        
+        width: 800px;
+        background-image: url(../images/bg-header-mobile.png);
+        background-size: cover;
+    }
+
+    .header {
+        align-items: center;
+    }
+    .botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-pc {
+        flex-direction: column;
+        align-items: center;
+     
+    }
+
+    .pc {
+        width: 100%;
+        position: static;
+    }
+
+    .info div {
+        text-align: center;
+    }
+
+    .tools {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parceiros {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer div {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .links {
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        flex-wrap: nowrap;
+    }
+
+    .links span {
+        margin-right: 0px;
+    }
+
+    .links a {
+        padding-right: 0;
+    }
+  }
